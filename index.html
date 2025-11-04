@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Undangan Pernikahan — Budi & Feby</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#fffdf9;
+      --accent:#b33a3a;      /* merah Betawi modern */
+      --accent2:#0b6b5f;     /* hijau/teal untuk keseimbangan Madura */
+      --muted:#6b6b6b;
+      --card:#fff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      background: linear-gradient(180deg, var(--bg), #fff);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* Header / Hero */
+    .hero{
+      text-align:center;
+      padding:48px 20px;
+      background:linear-gradient(90deg, rgba(179,58,58,0.06), rgba(11,107,95,0.04));
+      border-bottom:6px solid rgba(179,58,58,0.08);
+    }
+    .brand{
+      max-width:1000px;
+      margin:0 auto;
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:88px;height:88px;
+      border-radius:18px;
+      background:linear-gradient(180deg,#fff,#f8f4f2);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 6px 20px rgba(0,0,0,0.06);
+      border:6px solid #fff;
+    }
+    .logo img{width:72px;height:72px;object-fit:cover;border-radius:12px}
+
+    h1{font-family:'Playfair Display',serif;margin:6px 0 0;font-size:28px;color:var(--accent)}
+    .sub{color:var(--muted);margin-top:6px}
+
+    /* Card / content */
+    .wrap{max-width:900px;margin:28px auto;padding:18px}
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom:18px;
+    }
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:720px){ .two-col{grid-template-columns:1fr} h1{font-size:24px} }
+
+    .detail p{margin:8px 0;color:#333}
+    .names{font-family:'Playfair Display',serif;font-size:22px;color:var(--accent);margin:8px 0}
+    .meta{color:var(--muted);font-size:14px}
+
+    /* motif strip (Betawi / Madura) */
+    .motif{
+      display:flex;gap:8px;justify-content:center;align-items:center;padding:12px 0;
+    }
+    .motif img{height:48px;border-radius:8px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.05)}
+
+    /* tombol */
+    .btn{
+      display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;
+      background:var(--accent);color:white;box-shadow:0 8px 18px rgba(179,58,58,0.12)
+    }
+    .btn-outline{background:transparent;border:2px solid var(--accent2);color:var(--accent2)}
+
+    /* footer */
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:13px;margin-top:12px}
+    .mapframe{width:100%;height:300px;border:0;border-radius:10px;overflow:hidden}
+
+    /* gallery */
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:calc(50% - 4px);border-radius:8px;object-fit:cover;height:140px}
+    @media (max-width:480px){ .gallery img{width:100%} }
+
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="brand">
+      <div class="logo">
+        <!-- GANTI: ganti src ke foto prewedding kecil atau simbol -->
+        <img src="https://via.placeholder.com/150" alt="logo pasangan">
+      </div>
+      <div style="text-align:left">
+        <h1>Try & Ayu</h1>
+        <div class="sub">Menikah dalam adat Betawi — Madura</div>
+        <div class="meta">Sabtu, 15 Februari 2026 • Jakarta</div>
+      </div>
+    </div>
+
+    <div class="motif" style="margin-top:14px">
+      <!-- GANTI: gunakan 2-3 gambar kecil motif Betawi & Madura -->
+      <img src="https://via.placeholder.com/120x60?text=Betawi" alt="motif betawi">
+      <img src="https://via.placeholder.com/120x60?text=Madura" alt="motif madura">
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Undangan teks -->
+    <section class="card detail">
+      <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara pernikahan kami.</p>
+
+      <div class="two-col" style="margin-top:12px">
+        <div>
+          <div class="names">Try Budiansyah <span style="color:var(--muted)">— putra dari Bapak Nunung (Almarhum) & Ibu Imas Herawati</span></div>
+          <p class="meta"><strong>Akad Nikah</strong><br>10.00 WIB — selesai</p>
+        </div>
+        <div>
+          <div class="names">Feby Purnamasari<span style="color:var(--muted)">— putri dari Bapak Zaenudin & Ibu Nunung Ratna Setianingsih</span></div>
+          <p class="meta"><strong>Resepsi</strong><br>12.00 WIB — Selesai</p>
+        </div>
+      </div>
+
+      <p style="margin-top:12px">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan mendoakan.</p>
+
+      <div style="margin-top:12px">
+        <a class="btn" href="#rsvp">Konfirmasi Hadir (RSVP)</a>
+        <a class="btn btn-outline" href="#lokasi" style="margin-left:8px">Lihat Lokasi</a>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section class="card">
+      <h3 style="margin-top:0">Galeri Prewedding</h3>
+      <div class="gallery">
+        <!-- GANTI: path foto prewedding -->
+        <img src="https://via.placeholder.com/800x600?text=foto1" alt="">
+        <img src="https://via.placeholder.com/800x600?text=foto2" alt="">
+        <img src="https://via.placeholder.com/800x600?text=foto3" alt="">
+        <img src="https://via.placeholder.com/800x600?text=foto4" alt="">
+      </div>
+    </section>
+
+    <!-- Musik -->
+    <section class="card" id="musik">
+      <h3 style="margin-top:0">Musik (Background)</h3>
+      <p class="meta">Jika versi resmi tersedia di YouTube, masukkan video resmi untuk pemutaran. Atau gunakan file audio milikmu.</p>
+
+      <!-- Pilih A atau B: A = YouTube embed (direkomendasikan, legal jika video resmi tersedia)
+           GANTI: youtube_video_id dengan ID video YouTube resmi lagu -->
+      <div>
+        <iframe width="100%" height="120" src="https://www.youtube.com/embed/QPL2JvRCTtI&list=RDQPL2JvRCTtI?rel=0&autoplay=0&controls=1"
+          title="Lagu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- B: jika mau pakai file audio sendiri (pastikan hak cipta)
+      <audio controls loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+      </audio>
+      -->
+      <p style="font-size:13px;color:var(--muted);margin-top:8px">Catatan hak cipta: Pastikan kamu menggunakan versi yang punya izin (video YouTube resmi atau file yang kamu punya hak pakai). Jika ragu, gunakan instrumental cover yang berlisensi atau layanan streaming berlisensi.</p>
+    </section>
+
+    <!-- Lokasi -->
+    <section class="card" id="lokasi">
+      <h3 style="margin-top:0">Lokasi Acara</h3>
+      <p class="meta">Jl. H. Djairi</p>
+      <!-- GANTI: masukkan iframe embed Google Maps yang kamu dapat -->
+      <div style="margin-top:10px">
+        <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=1Kpg4MVqE1WuGmk78"></iframe>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="card" id="rsvp">
+      <h3 style="margin-top:0">Konfirmasi Kehadiran (RSVP)</h3>
+      <p class="meta">Mohon konfirmasi kehadiran sebelum 1 Februari 2026</p>
+
+      <!-- Opsi: Google Forms (direkomendasikan). GANTI linknya -->
+      <p><a class="btn" href="GANTI_LINK_GOOGLE_FORMS" target="_blank">Isi Form Konfirmasi</a></p>
+
+      <p style="margin-top:8px;color:var(--muted)">Atau hubungi: <strong>0838-9704-7895 (Try)</strong></p>
+    </section>
+
+    <footer>
+      <div style="max-width:900px;margin:0 auto">
+        <p>Terima kasih atas doa dan kehadiran Bapak/Ibu/Saudara/i.</p>
+        <p>© 2026 Budi & Feby</p>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
